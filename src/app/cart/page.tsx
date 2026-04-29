@@ -111,7 +111,7 @@ const CartPage = () => {
 <button className="w-8 h-8 rounded-full bg-red-100 hover:bg-red-200 transition-all duration-300 text-red-400 flex items-center justify-center cursor-pointer "><Trash2 className="w-3 h-3"/></button>
 
   </div>
-))) : activeStep===2 ? <ShippingForm/> : activeStep===3 && shippingForm ? <PaymentForm/> : <p className="text-sm text-gray-500">Please fill in the shipping form to Continue</p> }
+))) : activeStep===2 ? <ShippingForm setShippingForm={setShippingForm}/> : activeStep===3 && shippingForm ? <PaymentForm/> : <p className="text-sm text-gray-500">Please fill in the shipping form to Continue</p> }
 </div>
 
 
